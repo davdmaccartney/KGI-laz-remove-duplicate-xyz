@@ -63,7 +63,7 @@ for filename in os.listdir(dirname1):
             num_dupli = num_avant - num_apres
             nom= os.path.splitext(filename)[0]
          
-            outFile1 = File(dirout+'\\'+nom+'.laz', mode = "w", header = inFile.header)
+            outFile1 = File(dirout+'\\'+nom+'.las', mode = "w", header = inFile.header)
             outFile1.points = points_kept
             outFile1.close()
 
